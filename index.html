@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main2.css" type="text/css">
+    
+</head>
+
+<body>
+    <header>
+    <h1>My Goals for the Year</h1>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#html">Learning HTML</a>
+            </li>
+            <li>
+                <a href="#vacation">Planning a Vacation</a>
+            </li>
+            <li>
+                <a href="#contact">Contact me</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <section id="html">
+        <h2>I'm Ready to Learn HTML</h2>
+        <p>This is my first web page.</p>
+
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how:</p>
+        <ol>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>...I use resources from <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/">MDN</a>
+                </abbr>.</li>
+        </ol>
+    </section>
+    </header>
+
+    <hr>
+    <main>
+    <aside>
+        <details>
+            <summary>Guess the <mark>number of hours</mark>I code per day</summary>
+            <p>I  start at <time datetime="08:00">8 a.m</time> and I write code for<time datetime="PT3H"> 3 hours</time> every morning.</p>
+        </details>
+    </aside>
+    <br>
+    <table>
+        <caption>My Daily Routine</caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+               <th scope="col">Time</th>
+               <th>Working Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Mrng</th>
+            <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+            <td>Shift Hours</td>
+        </tr>
+        <tr>
+            <th scope="row">Break</th>
+            <td><time datetime="10:00">10am</time>-<time datetime="12:00">12am</time></td>
+            <td>Duty Time</td>
+        </tr>
+        <tr>
+            <th scope="row">Noon</th>
+            <td><time datetime="02:00">2am</time>-<time datetime="04:00">4am</time></td>
+            <td>Break Hour</td>
+        </tr>
+        <tr>
+            <th>Night</th>
+            <td rowspan="2">All Other Time</td>
+            <td>Free Time</td>
+        </tr>
+        <tr>
+            <th>Free</th>
+            <td>Sleep</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Eat,Sleep ...Repeat uhh</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    
+    <article id="vacation">
+        <section>
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a getaway</em>.</p>
+        <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+        <h3>Place I'd Like to Visit</h3>
+        <ul>
+            <li>
+                <p>I've heard good things about the Caribbean.</p>
+            </li>
+            <li>
+                <p>I've heard good things about going here:</p>
+                <address>
+                    Margaritaville Island Reserve Riviera Cancún<br>
+                    Bahia Petempich Puerto Morelos, Mexico<br>
+                    Colonia Morelos, México 77580
+                </address>
+            </li>
+        </ul>
+        <!-- TODO: Add more places -->
+        <h3>Places I Want to Avoid</h3>
+        <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+        </dl>
+        </section>
+    </article>
+<hr>
+    <article id="contact">
+        <h2>Contact me</h2>
+        <p>
+            Pls Contact whether you have doubt
+        </p>
+        <form action="https://httpbin.org/get"method="get">
+          <fieldset>  
+            <legend>Personal Info</legend>
+        <p>
+               <label for="firstName">FirstName:</label>
+               <input type="text" name="firstname" id="firstName" required>
+            </p>
+            <p>
+                <label for="secondName">SecondName:</label>
+                <input type="text" name="secondname" id="secondName" placeholder="Sathish" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="password">password:</label>
+                <input type="password" name="password" id="password" placeholder="your pw"  required>
+            </p>
+            <p>
+                <label for="phone">phone No:</label>
+                <input type="tel" name="phone" id="phone" placeholder="7096543789"  required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+            </p>
+            <p>
+                <label for="decade">Fav decade:</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2023" value="2000" step="10">
+            </p>
+            <p>
+                <label for="number">decade:</label>
+                <input type="number" name="number" id="number" value="1900" step="10">
+            </p>
+            <p>
+                <label for="content">Fav Content</label>
+                <select name="content" id="content" size="5">
+                    <optgroup label="Technology Related"></optgroup>
+                <option value="Data">Data</option>
+                <option value="Java">java</option>
+                <option value="HTML">HTML</option>
+                <option value="AI">C++</option>
+                <optgroup label="Earn Money Related"></optgroup>
+                <option value="Trade">Trade</option>
+                <option value="Business">Business</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Analog">Analog</option>
+                </select>
+            </p>
+        </fieldset>
+        </form>
+        <label for="choice">Favoo Content</label>
+        <input type="text" name="choice" content="choice" list="choice">
+        <datalist id="choice">
+            <option value="Data">
+            <option value="Java">
+            <option value="HTML">
+            <option value="AI">
+            <optgroup label="Earn Money Related"></optgroup>
+            <option value="Trade">
+            <option value="Business">
+            <option value="Commerce">
+            <option value="Analog">
+        </datalist>
+            </p>
+            </article>
+            <button type="submit">submit</button>
+</section>
+</main>
+    <hr>
+    <footer>
+    <p>
+    &lt;&lt;&lt; &copy; <a href="about.html">SWETHA</a> &gt;&gt;&gt;
+    </p>
+    <a href="#">Back to Top</a>
+    </footer>
+</body>
+
+</html>
