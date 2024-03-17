@@ -23,6 +23,19 @@ function add() {
     let result = n1 + n2
     sumel.textContent = "Sum: " + result
 }
+function sub() {
+    let result = n1 - n2
+    sumel.textContent = "Sum: " + result
+}
+function mul() {
+    let result = n1 * n2
+    sumel.textContent = "Sum: " + result
+}
+function div() {
+    let result = n1 / n2
+    sumel.textContent = "Sum: " + result
+}
+
 
 </script>
 </body>
