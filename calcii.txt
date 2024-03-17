@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Calci</title>
+</head>
+<body>
+<Span id="num1"></span>
+<span id="num2"></span>
+<br>
+<button onclick="add()">ADD</button>
+<button onclick="sub()">SUB</button>
+<button onclick="mul()">MUL</button>
+<button onclick="div()">DIV</button>
+<br>
+<Span id="sum">sum:</span>
+<script>
+  let n1=8
+  let n2=10
+  document.getelementbyId("num1").textcontent=n1
+  document.getelementbyId("num2").textcontent=n2
+  let sumel=document.getelementbyId("sum")
+
+function add() {
+    let result = n1 + n2
+    sumel.textContent = "Sum: " + result
+}
+
+</script>
+</body>
+</html>
